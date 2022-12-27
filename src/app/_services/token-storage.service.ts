@@ -22,25 +22,25 @@ export class TokenStorageService {
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }
 
-  public getToken(): string {
+  public getToken() {
     return sessionStorage.getItem(TOKEN_KEY);
   }
 
-  public saveUser(user): void {
+  public saveUser(user: any): void {
     window.sessionStorage.removeItem(USER_KEY);
     window.sessionStorage.setItem(USER_KEY, JSON.stringify(user));
   }
 
   public getUser(): any {
-    return JSON.parse(sessionStorage.getItem(USER_KEY));
+    return sessionStorage.getItem(USER_KEY);
   }
 
-  public getUserName(): string {
+  public getUserName(){
     if (!this.isLogged()) {
       return null;
     }
     const token = this.getToken();
-    const payload = token.split('.')[1];
+    const payload = token!.split('.')[1];
     const payloadDecoded = atob(payload);
     const values = JSON.parse(payloadDecoded);
     const username = values.sub;
@@ -52,7 +52,7 @@ export class TokenStorageService {
       return false;
     }
     const token = this.getToken();
-    const payload = token.split('.')[1];
+    const payload = token!.split('.')[1];
     const payloadDecoded = atob(payload);
     const values = JSON.parse(payloadDecoded);
     const roles = values.roles;
