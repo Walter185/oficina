@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { BoardUserComponent } from './components/board-user/board-user.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule,
