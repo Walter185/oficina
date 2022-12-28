@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+
+img {
+    width: 19px;
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #212529;
+    opacity: 95%;
+    font-style: white;
+    overflow: hidden;
+    text-align: left;
+    left: 0;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-inline-start: 10px;
+  }
+  
+  .nav-link {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+  
+  #curso {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    text-align: center;
+  }
+  
+  #logoAP {
+    width: 100px;
+    height: auto;
+    display: flex;
+    color: rgb(171, 167, 167);
+    margin-top: -15px;
+  }
+  
+  .data-container{
+    align-items: center;
+  }
+  #links {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  }
+  
+  #logointi {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    margin-top: -5px ;
+  }
+  
+  #footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    margin-top: auto;
+  }
+  
+  /* =============== Main =========== */
+  
+  
+  .profile-cover {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+  }
+  
+  #main{
+    margin-top: -20px;
+    width: 100%;
+  }
+  
