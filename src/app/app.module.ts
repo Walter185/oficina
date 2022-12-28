@@ -6,11 +6,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { BoardUserComponent } from './components/board-user/board-user.component';
+import { ProductComponent } from './components/product/product.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    ProductComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
